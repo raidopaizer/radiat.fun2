@@ -60,11 +60,15 @@ font-family: 'cs', Fallback, sans-serif;
 </header>
 
 <main>
-<h2>yeah not gonna lie you went the wrong way so uh yeah go back</h2>
+<h2 id="errorMessage"></h2>
 <img src="riceimages/RLyxicY.jpeg" style="width:25%">
 <figcaption>stoopid</figcaption>
 </main>
-
+<script>
+// got this from kevin.h4ck.me, he got it from stackoverflow anyways.
+        const requestedPage = document.location.pathname || 'Unknown';
+        document.getElementById('errorMessage').textContent = `Not gonna lie '${requestedPage}' isn't a page so, uhh you went the wrong way so uh yeah go back`;
+</script>
 </body>
 </html>
 
